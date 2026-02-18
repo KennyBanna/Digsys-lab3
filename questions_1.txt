@@ -31,3 +31,24 @@ the jump instructions also take time to execute.
 Home Assignment 1.5
 How do you turn on LED 2 on port B in assembly? Remember to set the direction to an output.
 Refer to Appendix A for instructions
+
+
+Home assignment 2.2
+If you allocate an array of bytes on the stack, and the stack pointer after allocation is 0x40E0,
+what is the address of the value at index 3?
+
+0x40E0 : index 0
+0x40E1 : index 1
+0x40E2 : index 2
+0x40E3 : index 3 (Answer)
+
+Lab Question 2.2
+What happens if we do not return the allocated memory in the subroutine?
+
+We will overwrite the data on the stack and lost it
+
+Lab Question 2.3
+Do we need to store the values in the allocated array? What happens if we just store the values
+randomly on the stack?
+
+- If we store them randomly we won't know where we find them
